@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    color:#fff;
+    background-color: #000;
+}
+
+a, a:hover, a:visited {
+    color: unset;
+    text-decoration: none;
+}
+
+header {
+    height: 220px;
+    background: linear-gradient(180deg, #4a8065 0%, #181818 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dscontrol-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dscontrol-logo-container img {
+    width: 120px;
+}
+
+.dscontrol-logo-container h1 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.dscontrol-logo-container p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.dscontrol-container {
+    width: 100%;
+    max-width: 900px;
+    margin:0 auto;    
+}
+
+.dscontrol-card {
+    background: hsl(180, 9%, 49%);
+    border-radius: 10px;
+    padding: 30px 10px;   
+    
+}
+
+#sales {
+    padding: 40px 10px;
+}
+
+.dscontrol-sales-title {
+    color: #84ff6b;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.dscontrol-form-control-container {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.dscontrol-form-control {
+    color: #9AAABE;
+    font-size: 18px;
+    height: 46px;
+    width: 100%;
+    background-color: #596377;
+    border: 1px solid  #cc5075;
+    border-radius: 5px;
+    padding: 0 20px;
+    
+}
+
+.dscontrol-sales-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.dscontrol-sales-table thead {
+    height: 55px;
+    font-size: 16px;
+    color: fff;
+    font-weight: 700;
+}
+
+.dscontrol-sales-table tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+
+}
+
+.dscontrol-sales-table tbody tr {
+    height: 74px;
+    border-top: 1px solid #5F6E82;
+}
+
+.dscontrol-sales-table tbody tr:hover > td {
+    background-color: #384459;
+}
+
+.dscontrol-sales-table tbody tr:nth-child(odd) {
+    background-color: #596377;
+}
+
+.dscontrol-red-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.dscontrol-red-btn {
+    height: 45px;
+    width: 45px;
+    background-color: rgba(255, 107, 114, 0.1);
+    border: 1px solid #84ff6b;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dscontrol-red-btn img {
+    width: 19px;    
+}
+
+.show576 {
+    display: none;
+}
+
+.show992 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .show576 {
+        display: table-cell;
+    }
+    .dscontrol-card {
+        padding: 35px;
+    }
+    .dscontrol-sales-table tbody tr {
+        height: 55px;
+    }
+    .dscontrol-sales-table tbody {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .show992 {
+        display: table-cell;
+    }
+}
